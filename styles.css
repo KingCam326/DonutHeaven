@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 50px; /* For fixed footer */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff69b4; /* Pink color */
+    padding: 20px;
+    text-align: center;
+}
+
+.header-sign {
+    max-width: 300px; /* Adjust based on your sign image size */
+    height: auto;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 15px 0 5px;
+}
+
+/* Donut Gallery Styles */
+.donut-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.donut-item {
+    text-align: center;
+}
+
+.donut-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.donut-item p {
+    margin-top: 10px;
+}
+
+/* Menu Categories Styles */
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.category table th,
+.category table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.category table th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* Reviews Section Styles */
+.reviews-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.reviews-button:hover {
+    background-color: #e55a9f;
+}
+
+/* Map Styles */
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cash Only Note */
+.cash-only {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Movie Location Note */
+.movie-note {
+    color: #0066cc;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-sign {
+        max-width: 200px; /* Smaller size for mobile */
+    }
+
+    .donut-gallery {
+        grid-template-columns: 1fr; /* Stack images vertically on mobile */
+    }
+}
