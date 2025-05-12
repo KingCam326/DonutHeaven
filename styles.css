@@ -104,7 +104,7 @@ h4 {
 /* Donut Gallery Styles */
 .donut-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased from 250px to 300px */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Increased from 250px to 300px */
     gap: 20px;
 }
 
@@ -114,7 +114,7 @@ h4 {
 
 .donut-item img {
     width: 100%;
-    height: 300px; /* Increased from 200px to 300px for less cropping */
+    height: 500px; /* Increased from 200px to 300px for less cropping */
     object-fit: cover; /* Maintain aspect ratio and fill height */
     border-radius: 8px;
 }
@@ -231,6 +231,6 @@ footer {
     }
 
     .donut-item img {
-        height: 200px; /* Increased from 150px to 200px for mobile */
+        height: 400px; /* Increased from 150px to 200px for mobile */
     }
 }
