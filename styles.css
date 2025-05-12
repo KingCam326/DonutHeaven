@@ -78,6 +78,28 @@ h4 {
     margin: 15px 0 5px;
 }
 
+/* About Us Section Styles */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    width: 50%;
+    height: 250px; /* Fixed height for alignment */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 50%;
+    height: 250px; /* Match the image height */
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
 /* Donut Gallery Styles */
 .donut-gallery {
     display: grid;
@@ -190,6 +212,17 @@ footer {
 
     .header-sign {
         max-width: 200px; /* Smaller size for mobile */
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+        height: auto; /* Allow height to adjust naturally on mobile */
     }
 
     .donut-gallery {
